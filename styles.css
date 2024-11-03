@@ -24,19 +24,22 @@ body {
     max-width: 580px;
     height: auto;
 }
+
 /* Link Styling */
 .text-container a {
     color: #FBF7AF; /* Same color as the text */
     text-decoration: underline; /* Underline the link */
 }
 
+/* Ensure link retains color in different states */
 .text-container a:hover,
 .text-container a:focus,
-.text-container a:visited,
-.text-container a:active {
-    color: #FBF7AF; /* Keep the same color on hover, focus, and active states */
+.text-container a:active,
+.text-container a:visited { /* Include :visited to maintain color */
+    color: #FBF7AF; /* Same color for all states */
     text-decoration: underline; /* Ensure it remains underlined */
 }
+
 /* Text Container Styling */
 .text-container {
     position: absolute;
@@ -70,11 +73,4 @@ body {
         width: 70%; /* Ensures 100% width within 15% left and right margins */
     }
     .text-container {
-        position: relative; /* Positioning text in relation to the image */
-        margin-top: 30%; /* Places text 30% down from the image */
-        margin-left: 15%;
-        margin-right: 15%;
-        font-size: 12px;
-        text-align: left;
-    }
-}
+        position: rela
