@@ -27,8 +27,8 @@ body {
 
 /* Link Styling */
 .text-container a {
-    color: #FBF7AF; /* Same color as the text */
-    text-decoration: underline; /* Underline the link */
+    color: #FBF7AF !important; /* Force the color to stay the same */
+    text-decoration: underline !important; /* Force underline */
 }
 
 /* Ensure link retains color in different states */
@@ -36,8 +36,8 @@ body {
 .text-container a:focus,
 .text-container a:active,
 .text-container a:visited { /* Include :visited to maintain color */
-    color: #FBF7AF; /* Same color for all states */
-    text-decoration: underline; /* Ensure it remains underlined */
+    color: #FBF7AF !important; /* Same color for all states */
+    text-decoration: underline !important; /* Ensure it remains underlined */
 }
 
 /* Text Container Styling */
@@ -45,7 +45,7 @@ body {
     position: absolute;
     bottom: 20%;
     right: 15%;
-    font-size: 16px;
+    font-size: 18px; /* Increase font size for desktop */
     line-height: 1.6;
     text-align: right;
 }
@@ -61,7 +61,7 @@ body {
     .text-container {
         bottom: 15%;
         right: 10%;
-        font-size: 14px;
+        font-size: 16px; /* Slightly larger font size for mobile */
     }
 }
 
@@ -69,8 +69,15 @@ body {
     /* Adjust layout for mobile screens */
     .image-container {
         top: 5%; /* Adjusts top margin slightly for mobile */
-        left: 15%; /* Aligns image with 15% left margin */
-        width: 70%; /* Ensures 100% width within 15% left and right margins */
+        left: 8%; /* Aligns image with 8% left margin */
+        width: 84%; /* Ensures 100% width within 8% left and right margins */
     }
     .text-container {
-        position: rela
+        position: relative; /* Positioning text in relation to the image */
+        margin-top: 20%; /* Places text 20% down from the image */
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 16px; /* Increased font size for mobile */
+        text-align: left;
+    }
+}
