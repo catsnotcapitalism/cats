@@ -68,7 +68,7 @@ body {
 @media (max-width: 480px) {
     /* Adjust layout for mobile screens */
     .image-container {
-        top: 5%; /* Adjusts top margin slightly for mobile */
+        top: 10%; /* Adjusts top margin slightly for mobile */
         left: 8%; /* Aligns image with 8% left margin */
         width: 84%; /* Ensures 100% width within 8% left and right margins */
     }
@@ -77,8 +77,8 @@ body {
         padding-top: 20%
         margin-top: 40%; /* Places text 20% down from the image */
         margin-left: 8%;
-        margin-right: 15%;
-        font-size: 16px; /* Increased font size for mobile */
+        margin-right: 0%;
+        font-size: 18px; /* Increased font size for mobile */
         text-align: left;
     }
 }
