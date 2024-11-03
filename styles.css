@@ -73,7 +73,6 @@ body {
         width: 84%; /* Ensures 100% width within 8% left and right margins */
     }
     .text-container {
-        position: absolute; /* Positioning text in relation to the image */
         padding-top: 20%
         margin-top: 40%; /* Places text 20% down from the image */
         left: 8%;
