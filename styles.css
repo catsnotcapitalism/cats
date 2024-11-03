@@ -1,0 +1,68 @@
+/* Background and General Styling */
+body {
+    background-color: #481B07;
+    font-family: 'Baskerville', serif;
+    color: #FBF7AF;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Image Container Styling */
+.image-container {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 35%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+}
+
+/* Text Container Styling */
+.text-container {
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust layout for tablets and smaller screens */
+    .image-container {
+        top: 15%;
+        left: 10%;
+        width: 50%;
+    }
+    .text-container {
+        bottom: 15%;
+        right: 10%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust layout for mobile screens */
+    .image-container {
+        top: 5%; /* Adjusts top margin slightly for mobile */
+        left: 15%; /* Aligns image with 15% left margin */
+        width: 70%; /* Ensures 100% width within 15% left and right margins */
+    }
+    .text-container {
+        position: relative; /* Positioning text in relation to the image */
+        margin-top: 30%; /* Places text 30% down from the image */
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 12px;
+        text-align: left;
+    }
+}
