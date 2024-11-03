@@ -32,6 +32,7 @@ body {
 
 .text-container a:hover,
 .text-container a:focus,
+.text-container a:visited,
 .text-container a:active {
     color: #FBF7AF; /* Keep the same color on hover, focus, and active states */
     text-decoration: underline; /* Ensure it remains underlined */
