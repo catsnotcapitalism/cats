@@ -24,7 +24,18 @@ body {
     max-width: 580px;
     height: auto;
 }
+/* Link Styling */
+.text-container a {
+    color: #FBF7AF; /* Same color as the text */
+    text-decoration: underline; /* Underline the link */
+}
 
+.text-container a:hover,
+.text-container a:focus,
+.text-container a:active {
+    color: #FBF7AF; /* Keep the same color on hover, focus, and active states */
+    text-decoration: underline; /* Ensure it remains underlined */
+}
 /* Text Container Styling */
 .text-container {
     position: absolute;
