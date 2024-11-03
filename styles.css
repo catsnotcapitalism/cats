@@ -74,9 +74,9 @@ body {
     }
     .text-container {
         position: absolute; /* Positioning text in relation to the image */
-        padding-top: 30%
+        padding-top: 20%
         margin-top: 40%; /* Places text 20% down from the image */
-        margin-left: 15%;
+        margin-left: 8%;
         margin-right: 15%;
         font-size: 16px; /* Increased font size for mobile */
         text-align: left;
